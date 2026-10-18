@@ -16,7 +16,7 @@
     "typecheck:esm": "tsc --noEmit --module esnext --moduleResolution bundler",
     "lint": "tsc --noEmit --strict --noUnusedLocals --noUnusedParameters",
     "lint:duplicates": "tsx lint-duplicates.ts",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "node init && tsc -p tsconfig.build.json",
     "indexer": "NODE_OPTIONS='--experimental-sqlite' tsx indexer.ts",
     "query-events": "NODE_OPTIONS='--experimental-sqlite' tsx query-events.ts",
     "keeper": "tsx keeper.ts",
